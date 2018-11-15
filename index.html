@@ -7,14 +7,76 @@
     <title>Weather</title>
 </head>
 <body>
-    <h1>My Weather Thing</h1>
 <!--jQuery Library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+<link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--Weather Plugin-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 <!--Our Scripts-->
 <script src="js/scripts.js"></script>
 
+<h1>My Weather Thing</h1>
+
+<a href="#city1" class="button">City 1</a>
+<a href="#city2" class="button">City 2</a>
+<a href="#geo" class="button">Geo</a>
+
+<!-- City One -->
+<div class="card" id="city1">
+  
+  <div class="card-image">
+    <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+  </div>
+  
+  <div class="header">
+    <div class="card-header-title city">City #1</div>
+    <div class="card-header-title temp">Temp</div>
+    <div class="card-header-title time">Time</div>
+  </div>
+  
+</div>
+
+<!-- City Two -->
+<div class="card" id="city2">
+  
+  <div class="card-image">
+    <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+  </div>
+  
+  <div class="header">
+    <div class="card-header-title city">City #2</div>
+    <div class="card-header-title temp">Temp</div>
+    <div class="card-header-title time">Time</div>
+  </div>
+  
+</div>
+
+<!-- Geo -->
+<div class="card" id="geo">
+  
+  <div class="card-image">
+    <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+  </div>
+  
+  <div class="header">
+    <div class="card-header-title city">City</div>
+    <div class="card-header-title temp">Temp</div>
+    <div class="card-header-title time">Time</div>
+  </div>
+  
+</div>
+
+<!--No Geo-->
+<div class="no-geo">
+  
+    <p>Go get lost.</p>
+    
+</div>
+
+
+<!--Primary
+<div id='primary'>
 <ul>
     <li class="image">
         <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
@@ -23,6 +85,37 @@
     <li class="temp">Temp</li>
     <li class="time">Time</li>
   </ul>
+</div>
+-->
+
+<!--Secondary
+<div id='secondary'>
+    <ul>
+        <li class="image">
+            <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+        </li>
+        <li class="city">City</li>
+        <li class="temp">Temp</li>
+        <li class="time">Time</li>
+      </ul>
+</div>
+-->
+
+<!--Geolocation
+<div id='geolocation'>
+    <ul>
+        <li class="image">
+            <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+        </li>
+        <li class="city">City</li>
+        <li class="temp">Temp</li>
+        <li class="time">Time</li>
+      </ul> 
+
+      <button>Get Location</button>
+</div>
+-->
+
 
 </body>
 </html>
