@@ -1,10 +1,13 @@
 body {
 	background: #06beb6;  
+	height: 100vh;
+	background-attachment: fixed;
 	
 }
 
 .card-header-title.city{
 	font-size: 50px;
+	text-align:  center;
 }
 
 .card-header-title.temp{
@@ -15,6 +18,15 @@ body {
 	font-size: 20px;
 }
 
+.card-header-title{
+	display: block;
+	text-align:  center;
+}
+
 .carousel-container{
 	text-align: center;
+}
+
+img {
+	padding-left: 80px;
 }
