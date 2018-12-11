@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 body {
 	background: #06beb6;  
 	height: 100vh;
@@ -21,6 +23,8 @@ body {
 .card-header-title{
 	display: block;
 	text-align:  center;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .carousel-container{

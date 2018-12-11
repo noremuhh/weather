@@ -6,10 +6,14 @@ var carousels = bulmaCarousel.attach(); // carousels now contains an array of al
 //City1
 $.simpleWeather({
   location: 98813,
+  woeid:'',
+  unit: 'f',
   success: function(weather) {
 
-    $('#city1 .image img').attr('src',weather.image);
+
+    $('#city1 .image img').attr(weather.image);
     $('#city1 .city').text(weather.city);
+    $('#city1 .country').text(weather.region);
     $('#city1 .temp').text(weather.temp);
     $('#city1 .time').text(weather.updated);
   }, 
@@ -23,7 +27,7 @@ $.simpleWeather({
   location: 11722,
   success: function(weather) {
 
-    $('#city2 .image img').attr('src',weather.image);
+    $('#city2 .image').attr('src',weather.image);
     $('#city2 .city').text(weather.city);
     $('#city2 .temp').text(weather.temp);
     $('#city2 .time').text(weather.updated);
