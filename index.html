@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- RWD -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,126 +36,85 @@
 
 <!-- Manifest JSON  -->
 <link rel="manifest" href="manifest.json">
-    
-    <!--Bulma-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">    
 <link rel="stylesheet" href="css/bulma-carousel.min.css"> 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 <!--jQuery Library-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--Weather Plugin-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 <!--Our Scripts-->
-<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/bulma-carousel.min.js"></script>
 <script src="js/scripts.js"></script>
-<title>Weather</title>
+    <title>PWA</title>
 
 </head>
 <body>
 
-<h1>My Weather Thing</h1>
-
-<a href="#city1" class="button">City 1</a>
-<a href="#city2" class="button">City 2</a>
-<a href="#geo" class="button">Geo</a>
-
-<div class='carousel carousel-animated carousel-animate-slide'>
-  <div class='carousel-container'>  
-  <!-- City One -->
-  <div class='carousel-item is-active' id="city1">
-  
-  <div class="card-image">
-    <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
-  </div>
-  
-  <div class="header">
-    <div class="card-header-title city">City #1</div>
-    <div class="card-header-title temp">Temp</div>
-    <div class="card-header-title time">Time</div>
-  </div>
-  
-</div>
-
-<!-- City Two -->
-<div class="carousel-item'" id="city2">
-  
-  <div class="card-image">
-    <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
-  </div>
-  
-  <div class="header">
-    <div class="card-header-title city">City #2</div>
-    <div class="card-header-title temp">Temp</div>
-    <div class="card-header-title time">Time</div>
-  </div>
-  
-</div>
-
-<!-- Geo -->
-<div class="carousel-item'" id="geo">
-  
-  <div class="card-image">
-    <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
-  </div>
-  
-  <div class="header">
-    <div class="card-header-title city">City</div>
-    <div class="card-header-title temp">Temp</div>
-    <div class="card-header-title time">Time</div>
-  </div>
-  
-</div>
-
-<!--No Geo-->
-<div class="no-geo">
-  
+    <h1>Weather App</h1>
     
+    <a href="#city1" class="button">City 1</a>
+    <a href="#city2" class="button">City 2</a>
+    <a href="#geo" class="button">Geo</a>
     
-</div>
+    <div class='carousel carousel-animated carousel-animate-slide'>
+        <div class='carousel-container'>
+          
+          <!-- City one -->
+          <div  id="city1" class='carousel-item is-active'>
 
+            <div class="card-image">
+                <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+            </div>
 
-<!--Primary
-<div id='primary'>
-<ul>
-    <li class="image">
-        <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
-    </li>
-    <li class="city">City</li>
-    <li class="temp">Temp</li>
-    <li class="time">Time</li>
-  </ul>
-</div>
--->
+            <div class="header">
+                <div class="card-header-title city">City #1</div>
+                <div class="card-header-title temp">Temp</div>
+                <div class="card-header-title time">Time</div>
+            </div>
 
-<!--Secondary
-<div id='secondary'>
-    <ul>
-        <li class="image">
-            <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
-        </li>
-        <li class="city">City</li>
-        <li class="temp">Temp</li>
-        <li class="time">Time</li>
-      </ul>
-</div>
--->
+          </div><!-- end .primary -->
+    
+          <!-- Secondary  -->
+          <div id="city2" class='carousel-item'>
+            
+            <div class="card-image">
+                <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+            </div>
 
-<!--Geolocation
-<div id='geolocation'>
-    <ul>
-        <li class="image">
-            <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
-        </li>
-        <li class="city">City</li>
-        <li class="temp">Temp</li>
-        <li class="time">Time</li>
-      </ul> 
+            <div class="header">
+                <div class="card-header-title city">City #2</div>
+                <div class="card-header-title temp">Temp</div>
+                <div class="card-header-title time">Time</div>
+            </div>
+          
+          </div><!-- end .secondary -->
+         
+          <!-- Geolocation -->
+          <div id="geo" class='carousel-item'>
+            
+            <div class="card-image">
+                <img src="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/28d.png">
+            </div>
 
-      <button>Get Location</button>
-</div>
--->
+            <div class="header">
+                <div class="card-header-title city">City</div>
+                <div class="card-header-title temp">Temp</div>
+                <div class="card-header-title time">Time</div>
+            </div>
+            
+            
+          </div>
+      
+        </div><!-- end .carousel-container -->
+      </div><!-- end .carousel -->
+    
 
+<!-- Scripts -->
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bulma-carousel.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
