@@ -29,7 +29,7 @@ $.simpleWeather({
 
     $('#city2 .image').attr('src',weather.image);
     $('#city2 .city').text(weather.city);
-    $('#city1 .country').text(weather.region);
+    $('#city2 .country').text(weather.region);
     $('#city2 .temp').text(weather.temp);
     $('#city2 .time').text(weather.updated);
   }, 
@@ -81,7 +81,7 @@ var getWeather = function(location){
       // Display Data
       $('#geo .image img').attr('src',weather.image);
       $('#geo .city').text(weather.city);
-      $('#city1 .country').text(weather.region);
+      $('#geo .country').text(weather.region);
       $('#geo .temp').text(weather.temp);
       $('#geo .time').text(weather.updated);
         
