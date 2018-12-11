@@ -2,6 +2,7 @@
 var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
 
 
+
 //City1
 $.simpleWeather({
   location: 98813,
